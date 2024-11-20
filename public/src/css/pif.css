@@ -64,3 +64,113 @@
     margin: 10px 0;
     margin-right: 100px;
 }
+
+/* Styles for founds block */
+.founds {
+    padding: 0 30px 15px 30px;
+}
+
+.founds .filter {
+    padding-bottom: 50px;
+}
+
+.founds .filter a {
+    padding: 8px 24px;
+    border-radius: 8px;
+    border: 2px solid #4F80FF;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+}
+
+.founds .filter a:last-child {
+    margin-right: 0px;
+}
+
+.founds .filter a.active {
+    background-color: #E12929;
+    color: white;
+    border: 2px solid transparent;
+}
+
+.founds .container-founds {
+    display: grid;
+    place-items: center;
+}
+
+.founds .container-founds .block {
+    display: flex;
+    width: 100%;
+    background-color: #FAFAFAFA;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 50px;
+}
+
+.founds .container-founds .block img {
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+    margin-right: 25px;
+}
+
+.founds .container-founds .block .text h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #232222;
+    padding-bottom: 10px;
+}
+
+.founds .container-founds .block .text span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #232222;
+}
+
+.founds .container-founds .block .text .data {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: -15px;
+}
+
+.founds .container-founds .block .text .data .block {
+    display: grid;
+}
+
+.founds .container-founds .block .text .data .block .first-p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #232222;
+    height: 70px;
+}
+
+.founds .container-founds .block .text .data .block p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #A8A8A8;
+}
+
+.founds .container-founds .block .text .data .block p b {
+    color: #901919;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.founds .container-founds .block .text .btn {
+    /* margin-bottom: 35px; */
+    margin-top: -10px;
+}
+
+.founds .container-founds .block .text .btn a {
+    padding: 18px 54px;
+    color: white;
+    background-color: #E12929;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+}
