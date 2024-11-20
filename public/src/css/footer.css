@@ -1,0 +1,90 @@
+/* Styles for footer block */
+footer {
+    padding: 50px 30px 25px 30px;
+    background-color: #232222;
+}
+
+footer .footer-header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    line-height: 65px;
+}
+
+footer .footer-header img {
+    width: 104px;
+    height: 70px;
+}
+
+footer .footer-header nav a {
+    margin-right: 50px;
+    text-decoration: none;
+    color: #FAFAFA;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+footer .footer-header nav a:last-child {
+    margin-right: 0;
+}
+
+footer .footer-header nav a:hover {
+    color: #E12929;
+}
+
+footer .footer-header .btns a:first-child {
+    margin-right: 35px;
+}
+
+footer .footer-header .btns a {
+    padding: 8px 24px;
+    border: 2px solid #E12929;
+    background-color:#E12929;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: 0.5s ease-in-out;
+}
+
+footer .footer-header .btns a:hover {
+    background-color: #B32020;
+    border: 2px solid #B32020;
+    color: white;
+}
+
+footer .footer-text {
+    padding-bottom: 50px;
+}
+
+footer .footer-text span {
+    display: block;
+    color: #CCCCCCCC;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+footer .footer-bottom {
+    border-top: 1px solid #CCCCCCCC;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+footer .footer-bottom a {
+    color: #FAFAFA;
+    font-size: 14px;
+    margin-right: 25px;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+    position: relative;
+    top: 15px;
+}
+
+footer .footer-bottom a:hover {
+    color: #CCCCCCCC;
+}
+
+footer .footer-bottom a:last-child {
+    margin-right: 0;
+}

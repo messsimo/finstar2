@@ -1,0 +1,30 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+/* Basic styles */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Styles for 404 page */
+.error-page {
+    padding: 150px 0;
+}
+
+.error-page h1 {
+    text-align: center;
+}

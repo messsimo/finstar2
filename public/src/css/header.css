@@ -1,0 +1,179 @@
+/* Styles for header block */
+header {
+    margin: 50px 30px 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    line-height: 100px;
+}
+
+header img {
+    width: 104px;
+    height: 70px;
+}
+
+header nav a {
+    margin-right: 50px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+header nav a:last-child {
+    margin-right: 0;
+}
+
+header nav a:hover {
+    color: #E12929;
+}
+
+header nav a.active {
+    color: #E12929;
+}
+
+header nav a.active:hover {
+    color: black;
+}
+
+header .btns a:first-child {
+    margin-right: 35px;
+}
+
+header .btns a {
+    padding: 8px 24px;
+    border: 2px solid #2E6EBA;
+    border-radius: 8px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    transition: 0.5s ease-in-out;
+}
+
+header .btns a:hover {
+    background-color: #2E6EBA;
+    color: white;
+}
+
+header .btns a.reg {
+    background-color: #E12929;
+    border: 2px solid #E12929;
+    color: white;
+}
+
+header .btns a.reg:hover {
+    border: 2px solid #C73737;
+    background-color: #C73737;
+}
+
+/* Styles for burger menu */
+header .burger {
+    display: none;
+}
+
+header .burger svg {
+    transition: 0.2s ease-in-out;
+}
+
+header .burger svg:hover {
+    transform: scale(1.1);
+}
+
+.burger-dropdown svg {
+    width: 16px;
+    height: 16px;
+    transform: rotate(180deg);
+    transition: 0.2s ease-in-out;
+}
+
+.burger-dropdown svg:hover {
+    transform: scale(1.1);
+}
+
+.burger-dropdown {
+    display: none;
+    background-color: black;
+    opacity: 0.9;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    bottom: 0;
+    top: 0;
+    transition: 0.2s ease-in-out;
+}
+
+.burger-dropdown.active {
+    display: block;
+}
+
+.burger-dropdown nav {
+    display: grid;
+    place-items: center;
+    padding-top: 100px;
+    margin-right: -10px;
+}
+
+.burger-dropdown nav a {
+    color: white;
+    text-decoration: none; 
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    transition: 0.1s ease-in-out;
+}
+
+.burger-dropdown nav a:hover {
+    color: #E12929;
+}
+
+header .btns a:first-child {
+    margin-right: 35px;
+}
+
+.burger-dropdown .btns {
+    display: grid;
+    place-items: center;
+    margin-left: -80px;
+}
+
+.burger-dropdown .btns a {
+    padding: 8px 24px;
+    border: 2px solid #2E6EBA;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.5s ease-in-out;
+    margin-bottom: 15px;
+}
+
+.burger-dropdown .btns a:hover {
+    background-color: #2E6EBA;
+    color: white;
+}
+
+.burger-dropdown .btns a.reg {
+    background-color: #E12929;
+    border: 2px solid #E12929;
+    color: white;
+}
+
+.burger-dropdown .btns a.reg:hover {
+    border: 2px solid #C73737;
+    background-color: #C73737;
+}
+
+.burger-dropdown svg {
+    float: right;
+    margin-top: 40px;
+    margin-right: 55px;
+    width: 24px;
+    height: 24px;
+    transform: rotate(180deg);
+    transition: 0.4s ease-in-out;
+}
+
+.burger-dropdown svg:hover {
+    transform: scale(1.3);
+}

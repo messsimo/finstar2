@@ -1,0 +1,66 @@
+/* Styles for hero block */
+.hero {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(154,169,250,1) 100%);
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 30px 50px 30px;
+    border-radius: 12px;
+}
+
+.hero .text {
+    padding-top: 100px;
+}
+
+.hero .text span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #232222;
+}
+
+.hero .text h2 {
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.hero .text p {
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.hero .text .btns {
+    padding-top: 50px;
+}
+
+.hero .text .btns a {
+    padding: 18px 34px;
+    background-color: #E12929;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+
+.hero .text .btns a:hover {
+    background-color: #B82222;
+}
+
+.hero .text .btns .btn {
+    border: 2px solid #E12929;
+    background-color: transparent;
+    color: black;
+    padding: 16px 32px;
+}
+
+.hero .text .btns .btn:hover {
+    background-color: #E12929;
+    color: white;
+}
+
+.hero img {
+    margin: 10px 0;
+    margin-right: 100px;
+}

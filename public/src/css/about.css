@@ -1,0 +1,553 @@
+/* Styles for hero block */
+.hero {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(154,169,250,1) 100%);
+    padding: 15px 30px;
+    height: 400px;
+}
+
+.hero .page-nav span {
+    color: #7D7D7D;
+    font-weight: 300;
+    font-size: 12.8px;
+}
+
+.hero .page-nav span b {
+    color: black;
+    font-weight: 300;
+}
+
+.hero .container-hero {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.hero .container-hero .text {
+    padding-top: 100px;
+    width: 50%;
+}
+
+.hero .container-hero .text span {
+    font-size: 14px;
+    color: #232222;
+    font-weight: 300;
+}
+
+.hero .container-hero .text h2 {
+    font-size: 42px;
+    font-weight: 400;
+}
+
+.hero .container-hero img {
+    margin-top: -15px;
+    margin-right: 150px;
+}
+
+/* Styles for advantages block */
+.advantages {
+    padding: 15px 30px;
+}
+
+.advantages .container-advantages {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    width: 100%;
+    overflow-x: auto;
+    word-wrap: break-word;
+    overflow: scroll;
+}
+
+.advantages .container-advantages::-webkit-scrollbar {
+    width: 0px; 
+    height: 0px;
+}
+
+.advantages .container-advantages .block {
+    width: 444px;
+    background-color: #FBFBFB;
+    border-radius: 12px;
+    margin-right: 25px;
+    text-align: left;
+}
+
+.advantages .container-advantages .block:last-child {
+    margin-right: 0;
+}
+
+.advantages .container-advantages .block h3 {
+    font-size: 100px;
+    font-weight: 800;
+    color: transparent; 
+    -webkit-text-stroke: 3px #E1292966;
+    margin-bottom: -30px;
+}
+
+.advantages .container-advantages .block span {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-left: 10px;
+}
+
+/* Styles for FAQ block */
+.faq {
+    padding: 50px 50px;
+}
+
+.faq .container-faq {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.faq .container-faq .img {
+    width: 50%;
+    display: grid;
+    place-items: center;  
+}
+
+.faq .container-faq .img img {
+    height: 554px;
+}
+
+.faq .container-faq .img .dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.faq .container-faq .img .dots .dot {
+    height: 8px;
+    width: 8px;
+    border-radius: 18px;
+    background-color: #D0D0D0;
+    margin-right: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.faq .container-faq .img .dots .dot.active {
+    background-color: #E12929;
+}
+
+.faq .container-faq .questions {
+    width: 50%;
+    padding-left: 25px;
+}
+
+.faq .container-faq .questions h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.faq .container-faq .questions .block {
+    width: 87%;
+    margin: 10px 0;
+    border: 2px solid transparent;
+    display: flex;
+    transition: 0.3s ease;
+    border-left: 2px solid #E12929;
+    border-radius: 0px;
+}
+
+.faq .container-faq .questions .block span {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px;
+    color: #333333;
+    transition: 0.3s ease;
+}
+
+.faq .container-faq .questions .block.active {
+    border: 2px solid #E12929;
+    border-radius: 8px;
+}
+
+.faq .container-faq .questions .block.active span {
+    font-size: 20px;
+    font-weight: 500;
+    color: #232222;
+}
+
+/* Styles for priorities block */
+.priorities {
+    padding: 15px 30px;
+}
+
+.priorities h2 {
+    color: #232222;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.priorities p {
+    font-size: 17px;
+    font-weight: 400;
+    color: #232222;
+}
+
+.priorities h3 {
+    color: #232222;
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+.priorities .container-priorities {
+    display: flex;
+    overflow-x: auto;
+    word-wrap: break-word;
+    overflow: scroll;
+}  
+
+.priorities .container-priorities::-webkit-scrollbar {
+    width: 0px; 
+    height: 0px;
+}
+  
+.priorities .container-priorities .block {
+    min-width: 344px;
+    max-width: 344px;
+    border-radius: 12px;
+    background-color: #FBFBFB;
+    display: grid;
+    place-items: center;
+    margin-right: 15px;
+    padding: 25px 25px;
+}
+
+.priorities .container-priorities .block span {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Styles for company team block */
+.team {
+    padding: 15px 30px;
+}
+
+.team h2 {
+    color: #232222;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.team p {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.team .container-team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.team .container-team .block {
+    width: 280px;
+    background-color: #FBFBFB;
+    display: grid;
+    place-items: center;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    padding: 25px 25px;
+}
+
+.team .container-team .block:last-child {
+    margin-right: 0;
+}
+
+.team .container-team .block p {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.team .container-team .block .last-p {
+    padding-bottom: 10px;
+    margin-top: -5px;
+}
+
+.team .container-team .block span {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.team .container-team .block a {
+    padding: 8px 24px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    border: 2px solid #2E6EBA;
+    border-radius: 8px;
+    margin-top: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+.team .container-team .block a:hover {
+    background-color: #2E6EBA;
+    color: white;
+}
+
+/* Styles for documents block */
+.documents {
+    padding: 15px 30px;
+}
+
+.documents h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+/* Container top */
+.documents .container-documents--top {
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.documents .container-documents--top .qr {
+    display: grid;
+    place-items: center;
+    width: 40%;
+}
+
+.documents .container-documents--top span {
+    width: 272px;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 15px;
+}
+
+.documents .container-documents--top .contact-info {
+    width: 60%;
+}
+
+.documents .container-documents--top .contact-info p {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 25px 0;
+    width: 523px;
+}
+
+.documents .container-documents--top .contact-info .data {
+    width: 698px;
+}
+
+.documents .container-documents--top .contact-info .data table tr td {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.documents .container-documents--top .contact-info .data table tr .first-td {
+    font-size: 18px;
+    font-weight: 400;
+    color: #4F80FF;
+    width: 60%;
+    vertical-align: top;
+}
+
+/* Container bottom */
+.documents .container-documents--bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 100px;
+}
+
+.documents .container-documents--bottom .first-document {
+    background-color: #FBFBFB;
+    border-radius: 12px;
+    margin-right: 50px;
+    padding: 25px;
+    display: grid;
+    place-items: center;
+}
+
+.documents .container-documents--bottom .first-document .text {
+    display: grid;
+    place-items: left;
+}
+
+.documents .container-documents--bottom .first-document .text h2 {
+    font-size: 28px;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+
+.documents .container-documents--bottom .first-document .text span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.documents .container-documents--bottom .first-document .text p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #828282;
+    padding: 15px 0 50px 0;
+}
+
+.documents .container-documents--bottom .second-document {
+    background-color: #FBFBFB;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.documents .container-documents--bottom .second-document h2 {
+    font-size: 25.9px;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+
+.documents .container-documents--bottom .second-document span {
+    font-size: 14.38px;
+    font-weight: 400;
+}
+
+.documents .container-documents--bottom .second-document p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #828282;
+    padding: 15px 0 25px 0;
+}
+
+.documents .container-documents--bottom .second-document h4 {
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+
+.documents .container-documents--bottom .second-document img {
+    display: block;
+    padding: 15px 0 30px 0;
+}
+
+.documents .container-documents--bottom .second-document span {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.documents .container-documents--bottom .second-document .contact-info {
+    display: flex;
+    padding-top: 15px;
+} 
+
+.documents .container-documents--bottom .second-document .contact-info p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #4F9D3A;
+    margin-top: -15px;
+    margin-right: 200px;
+}
+
+.documents .container-documents--bottom .second-document .contact-info .number span {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.documents .container-documents--bottom .second-document .img {
+    display: grid;
+    place-items: center;
+    padding-top: 50px;
+}
+
+/* Styles for details block */
+.details {
+    padding: 50px 30px;
+}
+
+.details h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #232222;
+}
+
+.details .container-details {
+    display: grid;
+    place-items: center;
+    padding-top: 25px;
+}
+
+.details .container-details table {
+    width: 60%;
+    border-collapse: collapse;
+}
+
+.details .container-details table tr td:first-child {
+    color: #686868;
+    font-size: 15px;
+}
+
+.details .container-details table tr td {
+    border-bottom: 1px solid #00000066;
+    padding: 15px 0 5px 10px;
+    font-size: 16px;
+    font-weight: 400;
+    vertical-align: bottom;
+}
+
+/* Styles for contact block */
+.contact {
+    margin: 100px 0;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(154,169,250,1) 100%);
+}
+
+.contact .container-contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 150px;
+}
+
+.contact .container-contact .text {
+    /* padding-top: 50px; */
+    width: 50%;
+}
+
+.contact .container-contact .text h2 {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.contact .container-contact .text .last-h2 {
+    margin-top: -10px;
+    padding-bottom: 20px;
+}
+
+.contact .container-contact .text h3 {
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.contact .container-contact .text p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.contact .container-contact .text .last-p {
+    padding-bottom: 20px;
+}
+
+.contact .container-contact .text span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.contact .container-contact .map {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.contact .container-contact .map iframe {
+    border-radius: 12px;
+    width: 500px;
+    height: 300px;
+}
