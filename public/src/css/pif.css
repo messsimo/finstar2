@@ -229,3 +229,107 @@
     color: #232222;
     width: 625px;
 }
+
+/* Styles for contact form */
+.contact-form {
+    margin: 15px 30px 50px 30px;
+    background-color: #F4F3FF;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-form .img {
+    width: 50%;
+}
+
+.contact-form .form {
+    width: 50%;
+    padding-top: 35px;
+}
+
+.contact-form .form form {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form .form form input[type='text'],
+.contact-form .form form textarea {
+    display: block;
+    width: 65%;
+    border: 2px solid #E12929;
+    color: #23222266;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 18px 34px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    outline: none;
+}
+
+.contact-form .form form textarea {
+    height: 20px;
+}
+
+.contact-form .form form .info {
+    display: flex; 
+    align-items: flex-start;
+    gap: 10px;
+    width: 75%;
+    margin-top: -25px;
+    margin-left: -30px;
+}
+
+.contact-form .form form .info span {
+    font-size: 18px; 
+    font-weight: 700;
+    color: #23222266;
+    vertical-align: top;
+    text-align: left;
+    line-height: 1.5; 
+    flex: 1; 
+}
+
+.contact-form .form form .info span b {
+    color: #BA2E2E;
+}
+
+.contact-form .form form .info input[type="checkbox"] {
+    display: none; 
+}
+  
+.contact-form .form form .info label {
+    width: 24px;
+    height: 24px;
+    background-color: #CCCCCC;
+    display: inline-block;
+    position: relative;
+    border-radius: 8px;
+    cursor: pointer;
+    flex-shrink: 0; 
+}
+
+.contact-form .form form .info input[type="checkbox"]:checked + label::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    position: absolute;
+    top: 3px;
+    left: 6px;
+    transform: rotate(45deg);
+    display: block;
+}
+
+.contact-form .form form button {
+    color: white;
+    background-color: #E12929;
+    padding: 18px 34px;
+    width: 75%;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 700;
+}

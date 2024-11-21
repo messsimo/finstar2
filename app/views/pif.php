@@ -57,11 +57,11 @@
                         </div>
                         <div class="block">
                             <p class="first-p">Стоимость чистых активов</p>
-                            <p><b>291 359 267.00 USD</b>на 09.11.2023</p>
+                            <p><b>291 359 267.00 USD</b> на 09.11.2023</p>
                         </div>
                         <div class="block">
                             <p class="first-p">Прирост расчетной стоимости инвестиционного пая</p>
-                            <p><b>3.66%</b>на 09.11.2023</p>
+                            <p><b>3.66%</b> на 09.11.2023</p>
                         </div>
                     </div>
 
@@ -84,11 +84,11 @@
                         </div>
                         <div class="block">
                             <p class="first-p">Стоимость чистых активов</p>
-                            <p><b>291 359 267.00 USD</b>на 09.11.2023</p>
+                            <p><b>291 359 267.00 USD</b> на 09.11.2023</p>
                         </div>
                         <div class="block">
                             <p class="first-p">Прирост расчетной стоимости инвестиционного пая</p>
-                            <p><b>3.66%</b>на 09.11.2023</p>
+                            <p><b>3.66%</b> на 09.11.2023</p>
                         </div>
                     </div>
 
@@ -138,6 +138,30 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- Contact form -->
+    <div class="contact-form">
+        <div class="img">
+            <img src="/public/src/images/bank.png" alt="Bank">
+        </div>
+
+        <div class="form">
+            <form>
+                <input type="text" placeholder="Введите имя">
+                <input type="text" placeholder="+7(___)___-__-__" oninput="if (!this.value.startsWith('+7')) this.value = '+7' + this.value.replace(/^\+7/, '');" value="+7">
+                <input type="text" placeholder="Введите электронную почту">
+                <textarea placeholder="Текст обращения"></textarea>
+
+                <div class="info">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox"></label>
+                    <span>Я согласен с <b>политикой конфиденциальности</b> и даю <b>согласие на обработку моих персональных данных</b></span>
+                </div>
+
+                <button>Получить консультацию</button>
+            </form>
         </div>
     </div>
 
