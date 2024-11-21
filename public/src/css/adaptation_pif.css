@@ -1,0 +1,209 @@
+/* Adaptation for header */
+@media (max-width: 1250px) {
+    header nav a {
+        margin-right: 25px;
+    }
+
+    header .btns a:first-child {
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 1100px) {
+    header nav a {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 1050px) {
+    header {
+        margin: 50px 15px 15px 15px;
+    }
+}
+
+@media (max-width: 980px) {
+    header nav {
+        display: none;
+    }
+
+    header .btns {
+        display: none;
+    }
+
+    header .burger {
+        display: block;
+    }
+}
+
+/* Adaptation for footer */ 
+@media (max-width: 1100px) {
+    footer .footer-header nav a {
+        margin-right: 25px;
+    }
+}
+
+@media (max-width: 1000px) {
+    footer .footer-header nav a {
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 980px) {
+    footer .footer-header {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .footer-header .btns a:first-child {
+        margin-right: auto;
+    }
+
+    footer .footer-header nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 751px) {
+    footer .footer-bottom {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer .footer-bottom a {
+        margin-bottom: 10px;
+    }
+}
+
+/* Adaptation for hero block */
+@media (max-width: 1423px) {
+    .hero img {
+        margin-right: 25px;
+    }
+}
+
+@media (max-width: 1348px) {
+    .hero .text h2 {
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 1236px) {
+    .hero .text .btns {
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero .text .btns a {
+        width: 36%;
+        margin-bottom: 15px;
+    }
+
+    .hero .text .btns .btn {
+        width: 43%;
+    }
+
+    .hero .text {
+        padding-top: 60px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .hero {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero .text {
+        display: grid;
+        place-items: center;
+        padding-bottom: 50px;
+    }
+
+    .hero .text .btns {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero .text .btns a {
+        width: max-content;
+    }
+
+    .hero .text .btns .btn {
+        width: max-content;
+    }
+
+    .hero img {
+        padding-bottom: 50px;
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 802px) {
+    .hero .text h2 {
+        font-size: 36px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 740px) {
+    .hero img {
+        width: 400px;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero .text h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 540px) {
+    .hero .text .btns a {
+        padding: 16px 28px;
+    }
+
+    .hero .text p {
+        font-size: 14px;
+    }
+
+    .hero .text h2 {
+        font-size: 28px;
+    }
+
+    .hero img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 440px) {
+    .hero .text .btns a {
+        padding: 12px 18px;
+    }
+
+    .hero .text .btns .btn {
+        padding: 12px 18px;
+    }
+
+    .hero .text h2 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 390px) {
+    .hero .text .btns a {
+        padding: 12px 12px;
+    }
+
+    .hero .text .btns .btn {
+        padding: 12px 12px;
+    }
+}

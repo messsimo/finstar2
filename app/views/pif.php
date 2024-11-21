@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/public/src/css/header.css">
     <link rel="stylesheet" href="/public/src/css/footer.css">
     <link rel="stylesheet" href="/public/src/css/pif.css">
+    <link rel="stylesheet" href="/public/src/css/adaptation_pif.css">
 
     <title>Finstar</title>
 </head>
