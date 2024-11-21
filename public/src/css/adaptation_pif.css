@@ -207,3 +207,61 @@
         padding: 12px 12px;
     }
 }
+
+/* Adaptation for founds block */
+@media (max-width: 1381px) {
+    .founds .container-founds .block .text .data .block .first-p {
+        height: 80px;
+    }
+
+    .founds .container-founds .block .text .btn {
+        margin-top: -20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .founds .container-founds .block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .founds .container-founds .block img {
+        margin-bottom: 25px;
+    }
+
+    .founds .container-founds .block .text .btn {
+        margin-bottom: 35px;
+        margin-top: 0px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 980px) {
+    .founds .container-founds .block .text .data {
+        display: grid;
+        justify-content: center;
+    }
+
+    .founds .container-founds .block .text .data .block {
+        display: grid;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .founds .container-founds .block .text .btn {
+        margin-top: 25px;
+    }
+
+    .founds .filter {
+        overflow-x: auto;
+        word-wrap: break-word;
+        overflow: scroll;
+        display: flex;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        width: 100%;
+    }
+}
