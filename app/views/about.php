@@ -343,6 +343,6 @@
 ?>
 
 <!-- Connecting JS -->
-<script src="/public/js/faqChanges.js"></script>
+<script src="/public/src/js/faqChanges.js"></script>
 </body>
 </html>
