@@ -265,3 +265,22 @@
         width: 100%;
     }
 }
+
+/* Adaptation for info block */
+@media (max-width: 980px) {
+    .info .container-info {
+        display: grid;
+        justify-content: center;
+        place-items: center;
+        width: 100%;
+    }
+
+    .info .container-info .block {
+        width: 100%;
+    }
+
+    .info .container-info .block .sub-block {
+        padding-bottom: 25px;
+        height: max-content;
+    }
+}
