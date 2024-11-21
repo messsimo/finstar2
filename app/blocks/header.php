@@ -36,3 +36,6 @@
         <a class="reg" href="">Регистрация</a>
     </div>
 </div>
+
+<!-- Connecting JS -->
+<script src="/public/src/js/burger.js"></script>

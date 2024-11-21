@@ -284,3 +284,33 @@
         height: max-content;
     }
 }
+
+/* Adaptation for contact form */
+@media (max-width: 980px) {
+    .contact-form {
+        display: grid;
+        justify-content: center;
+        place-items: center;
+    }
+
+    .contact-form .img {
+        width: 100%;
+    }
+
+    .contact-form .form {
+        width: 65%;
+    }
+
+    .contact-form .form form input[type='text'], .contact-form .form form textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contact-form .form form .info {
+        width: 100%;
+    }
+
+    .contact-form .form form button {
+        width: 100%;
+    }
+}

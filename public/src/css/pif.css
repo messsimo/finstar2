@@ -241,11 +241,14 @@
 
 .contact-form .img {
     width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact-form .form {
     width: 50%;
-    padding-top: 35px;
+    padding: 35px 0;
 }
 
 .contact-form .form form {

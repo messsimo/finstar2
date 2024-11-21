@@ -171,7 +171,5 @@
     <?php 
         require_once $_SERVER['DOCUMENT_ROOT'] . '/app/blocks/footer.php';     
     ?>
-
-
 </body>
 </html>
