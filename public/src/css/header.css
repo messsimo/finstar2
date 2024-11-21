@@ -134,7 +134,6 @@ header .btns a:first-child {
 .burger-dropdown .btns {
     display: grid;
     place-items: center;
-    margin-left: -80px;
 }
 
 .burger-dropdown .btns a {

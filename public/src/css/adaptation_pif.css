@@ -264,6 +264,10 @@
         white-space: nowrap;
         width: 100%;
     }
+
+    .founds .container-founds .block .text .data .block .first-p {
+        height: max-content;
+    }
 }
 
 /* Adaptation for info block */
