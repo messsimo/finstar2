@@ -18,6 +18,33 @@
         require_once $_SERVER['DOCUMENT_ROOT'] . '/app/blocks/header.php';
     ?>
 
+<table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Название</th>
+                <th>Описание</th>
+                <th>Дата</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php if (!empty($all_founds)): ?>
+                <?php foreach ($all_founds as $found): ?>
+                    <tr>
+                        <td><?php echo htmlspecialchars($found['id']); ?></td>
+                        <td><?php echo htmlspecialchars($found['name']); ?></td>
+                        <td><?php echo htmlspecialchars($found['description']); ?></td>
+                        <td><?php echo htmlspecialchars($found['created_at']); ?></td>
+                    </tr>
+                <?php endforeach; ?>
+            <?php else: ?>
+                <tr>
+                    <td colspan="4">Нет данных</td>
+                </tr>
+            <?php endif; ?>
+        </tbody>
+    </table>
+
     <!-- Hero block -->
     <div class="hero">
         <div class="text">
