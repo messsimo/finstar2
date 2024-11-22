@@ -18,33 +18,6 @@
         require_once $_SERVER['DOCUMENT_ROOT'] . '/app/blocks/header.php';
     ?>
 
-<table>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Название</th>
-                <th>Описание</th>
-                <th>Дата</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php if (!empty($all_founds)): ?>
-                <?php foreach ($all_founds as $found): ?>
-                    <tr>
-                        <td><?php echo htmlspecialchars($found['id']); ?></td>
-                        <td><?php echo htmlspecialchars($found['name']); ?></td>
-                        <td><?php echo htmlspecialchars($found['description']); ?></td>
-                        <td><?php echo htmlspecialchars($found['created_at']); ?></td>
-                    </tr>
-                <?php endforeach; ?>
-            <?php else: ?>
-                <tr>
-                    <td colspan="4">Нет данных</td>
-                </tr>
-            <?php endif; ?>
-        </tbody>
-    </table>
-
     <!-- Hero block -->
     <div class="hero">
         <div class="text">
@@ -72,24 +45,25 @@
         </div>
 
         <div class="container-founds">
+            <?php foreach($all_founds as $el) { ?>
             <div class="block">
-                <img src="/public/src/images/found1.png" alt="Found Finstar">
+                <img src="/public/src/images/<?= $el["image"] ?>" alt="Found Finstar">
                 <div class="text">
-                    <h3>ЗПИФ рыночных финансовых инструментов «Фонд первичных размещений»</h3>
-                    <span>Основой инвестиционной стратегии является участие в первичном размещении потенциально высокодоходных на определенном временном горизонте акций на американском фондовом рынке с размещением свободных средств в денежных средствах и инструментах с наибольшей надежностью. Акций на американском фондовом рынке с размещением свободных средств в денежных средствах и инструментах с наибольшей</span>
+                    <h3><?= $el["title"] ?></h3>
+                    <span><?= $el["description"] ?></span>
                     
                     <div class="data">
                         <div class="block">
                             <p class="first-p">Расчетная стоимость пая</p>
-                            <p><b>18.43 USD</b> на 09.11.2023</p>
+                            <p><b><?= number_format($el["share_value"]) ?> USD</b> на 09.11.2023</p>
                         </div>
                         <div class="block">
                             <p class="first-p">Стоимость чистых активов</p>
-                            <p><b>291 359 267.00 USD</b> на 09.11.2023</p>
+                            <p><b><?= number_format($el["asset_value"]) ?> USD</b> на 09.11.2023</p>
                         </div>
                         <div class="block">
                             <p class="first-p">Прирост расчетной стоимости инвестиционного пая</p>
-                            <p><b>3.66%</b> на 09.11.2023</p>
+                            <p><b><?= number_format($el["estimated_value"]) ?>%</b> на 09.11.2023</p>
                         </div>
                     </div>
 
@@ -98,33 +72,7 @@
                     </div>
                 </div>
             </div>
-
-            <div class="block">
-                <img src="/public/src/images/found1.png" alt="Found Finstar">
-                <div class="text">
-                    <h3>ЗПИФ рыночных финансовых инструментов «Фонд первичных размещений»</h3>
-                    <span>Основой инвестиционной стратегии является участие в первичном размещении потенциально высокодоходных на определенном временном горизонте акций на американском фондовом рынке с размещением свободных средств в денежных средствах и инструментах с наибольшей надежностью. Акций на американском фондовом рынке с размещением свободных средств в денежных средствах и инструментах с наибольшей</span>
-                    
-                    <div class="data">
-                        <div class="block">
-                            <p class="first-p">Расчетная стоимость пая</p>
-                            <p><b>18.43 USD</b> на 09.11.2023</p>
-                        </div>
-                        <div class="block">
-                            <p class="first-p">Стоимость чистых активов</p>
-                            <p><b>291 359 267.00 USD</b> на 09.11.2023</p>
-                        </div>
-                        <div class="block">
-                            <p class="first-p">Прирост расчетной стоимости инвестиционного пая</p>
-                            <p><b>3.66%</b> на 09.11.2023</p>
-                        </div>
-                    </div>
-
-                    <div class="btn">
-                        <a href="">Подробнее</a>
-                    </div>
-                </div>
-            </div>
+            <?php } ?>
         </div>
     </div>
 
